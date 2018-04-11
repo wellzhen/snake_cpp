@@ -188,7 +188,7 @@ void playGame(int gameType)
 void exportGameProgressToFile(CSnake& snake)
 {
 	FILE* pFile;
-	fopen_s(&pFile, "log.db", "wb");
+	fopen_s(&pFile, "data.db", "wb");
 	//1.分数
 	int score = snake.getScore();
 	fwrite(&score, sizeof(int), 1, pFile);	   // printf("分数：%d \n", score);
@@ -262,7 +262,7 @@ void recoverGameProcess(CSnake& snake)
 {
 	//障碍物 null;食物 null ;身体: 只有头
 	FILE * pFile;
-	fopen_s(&pFile, "log.db", "rb");
+	fopen_s(&pFile, "data.db", "rb");
 	
 	//1.分数
 	int score;
