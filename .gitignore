@@ -1,0 +1,8 @@
+.vs
+Debug/
+snake_cpp.sln
+snake_cpp.VC.db
+snake_cpp/Debug/
+snake_cpp/snake_cpp.vcxproj
+snake_cpp/snake_cpp.vcxproj.filters
+snake_cpp/snake_cpp.vcxproj.user
